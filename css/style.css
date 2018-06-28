@@ -99,6 +99,19 @@ ul {
 .rating {
   color: #ED1C24; }
 
+.about-image {
+  height: 450px;
+  width: 100%;
+  background-image: url("../images/2.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: red;
+  background-size: cover; }
+
+.about-text {
+  max-width: 900px;
+  margin: 40px auto 0; }
+
 footer .container {
   display: flex;
   align-items: center;
@@ -131,3 +144,26 @@ footer nav li {
     footer nav li a:hover {
       color: white;
       transition: color 0.2s ease; }
+
+.visible-small {
+  display: none; }
+
+@media (max-width: 400px) {
+  .hidden-small {
+    display: none; }
+
+  .visible-small {
+    display: block; }
+
+  .recent {
+    margin-top: 80px; }
+
+  .container {
+    padding: 20px; }
+
+  section {
+    margin-top: 50px; }
+
+  .about-text {
+    max-width: 900px;
+    margin: 40px; } }
