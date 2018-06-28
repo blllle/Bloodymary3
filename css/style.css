@@ -36,8 +36,7 @@ header .container {
 header nav li {
   margin-left: 10px;
   display: inline-block;
-  list-style: none;
-  font-size: 18px; }
+  list-style: none; }
   header nav li a {
     color: #02142B;
     font-family: "lato", sans-serif;
@@ -61,7 +60,8 @@ h2 {
 
 h3 {
   font-size: 20px;
-  font-family: "lato", sans-serif; }
+  font-family: "lato", sans-serif;
+  margin-left: 10px; }
 
 section {
   margin-top: 100px; }
@@ -82,22 +82,29 @@ section {
 
 .list-all {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
 li {
-  margin: 10px 0;
-  padding-left: none; }
+  margin: 10px 0; }
 
 ul {
+  margin: 0px 10px;
   list-style: none;
   padding-left: 0px;
   -webkit-padding-start: 0px; }
 
-.venue-name {
-  font-weight: 600; }
+.venues a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #02142B; }
 
 .rating {
-  color: #ED1C24; }
+  color: #02142B; }
+
+.location {
+  font-size: 12px;
+  display: block; }
 
 .about-image {
   height: 450px;
