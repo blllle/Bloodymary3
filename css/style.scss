@@ -42,6 +42,19 @@ body {
   
   background-color: $backgroundgrey-color;
   color: $darkgrey-color;
+  margin:0px;
+}
+
+// outer wrapper
+.container-fluid {
+    overflow: hidden;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+// inner wrapper
+.container {
   margin: 40px auto 40px auto;
   padding: 0px 40px;
 }
@@ -57,37 +70,38 @@ header {
   box-shadow: 0 0 2px rgba(6, 8, 8, 0.15);
 }
 
-.container {
-  margin: 0 auto;
-  padding: 15px 20px;
-}
 
 header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+    margin: 0 auto;
+  padding: 15px 20px;
 
 }
 
 
-nav li {
+header nav li {
   margin-left: 10px;
   display: inline-block;
   list-style: none;
-  a{
-    color: black;
-    text-decoration: none; 
-  }
-  &:hover {
-    color: #fd0000;
-    transition: color 0.5s;
+  font-size: 18px;
+
+  a {
+    color: $darkgrey-color;
+  font-family: $headings-font;
+  font-size: $body-size;
+  margin: 5px;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+
+    &:hover {
+      color: $red-color;
+      transition: color 0.2s ease;
+    }
   }
 }
 
-
-nav {
-  display: inline-block;
-}
 
 
 header img {
@@ -104,13 +118,31 @@ h2 {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: $h3-size;
   font-weight: 700;
 }
 
 section {
   margin-top: 100px;
 }
+
+.recent {
+  margin-top: 150px;
+  p {
+    text-align: center;
+  }
+  a {
+    color: $red-color;
+    text-decoration: none; 
+  }
+  h2 {
+   margin-bottom: 10px   
+  }
+}
+
+
+
+
 
 .list-all {
   display: flex;
@@ -119,5 +151,65 @@ section {
 
 li {
   margin: 10px 0;
+  padding-left:none;
 }
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+  -webkit-padding-start: 0px;
+
+}
+
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    margin: 20px auto;
+}
+
+.footerstyles {
+  padding: 0px 20px;
+  background-color: $footer-color;
+    overflow: hidden;
+
+  span {
+    color: #C1C0B9;
+    font-family: $body-font;
+    font-size: $body-size;
+    margin: 5px;
+    letter-spacing: 1.5px;
+  }
+}
+
+
+
+footer nav li {
+  margin-left: 10px;
+  display: inline-block;
+  list-style: none;
+  font-size: 16px;
+
+  a {
+  color: $red-color;
+  font-family: $body-font;
+  font-size: $body-size;
+  margin: 5px;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+
+    &:hover {
+      color: white;
+      transition: color 0.2s ease;
+    }
+  }
+}
+
+
+
+
+
+
+
 
