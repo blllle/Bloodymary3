@@ -9,8 +9,8 @@ $footer-color:              #1F252B;
 
 // variables - fonts
 
-$headings-font:             'Avenir Heavy', sans-serif;
-$body-font:                 'Avenir Book', sans-serif;
+$headings-font:             'lato', sans-serif;
+$body-font:                 'lato', sans-serif;
 
 
 $body-size:                 16px;
@@ -20,19 +20,6 @@ $h3-size:                   20px;
 
 
 
-@font-face {
-font-family: 'Avenir Heavy';
-font-style: normal;
-font-weight: normal;
-src: url('fonts/AvenirLTStd-Heavy.woff') format('woff');
-}
-
-@font-face {
-font-family: 'Avenir Book';
-font-style: normal;
-font-weight: normal;
-src: url('fonts/AvenirLTStd-Book.woff') format('woff');
-}
 
 
 body {
@@ -68,6 +55,7 @@ header {
   left: 0;
   background-color: white;
   box-shadow: 0 0 2px rgba(6, 8, 8, 0.15);
+  z-index: 2;
 }
 
 
@@ -119,7 +107,7 @@ h2 {
 
 h3 {
   font-size: $h3-size;
-  font-weight: 700;
+  font-family: $headings-font;
 }
 
 section {
@@ -169,6 +157,13 @@ ul {
   padding-left: 0px;
   -webkit-padding-start: 0px;
 
+}
+
+.venue-name {
+  font-weight: 600;
+}
+.rating {
+  color: $red-color;
 }
 
 

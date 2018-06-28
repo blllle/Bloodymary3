@@ -1,15 +1,5 @@
-@font-face {
-  font-family: 'Avenir Heavy';
-  font-style: normal;
-  font-weight: normal;
-  src: url("fonts/AvenirLTStd-Heavy.woff") format("woff"); }
-@font-face {
-  font-family: 'Avenir Book';
-  font-style: normal;
-  font-weight: normal;
-  src: url("fonts/AvenirLTStd-Book.woff") format("woff"); }
 body {
-  font-family: "Avenir Book", sans-serif;
+  font-family: "lato", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #F5F5F5;
@@ -33,7 +23,8 @@ header {
   top: 0;
   left: 0;
   background-color: white;
-  box-shadow: 0 0 2px rgba(6, 8, 8, 0.15); }
+  box-shadow: 0 0 2px rgba(6, 8, 8, 0.15);
+  z-index: 2; }
 
 header .container {
   display: flex;
@@ -49,7 +40,7 @@ header nav li {
   font-size: 18px; }
   header nav li a {
     color: #02142B;
-    font-family: "Avenir Heavy", sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 16px;
     margin: 5px;
     letter-spacing: 1.5px;
@@ -64,13 +55,13 @@ header img {
 h2 {
   text-align: center;
   font-size: 24px;
-  font-family: "Avenir Heavy", sans-serif;
+  font-family: "lato", sans-serif;
   text-transform: uppercase;
   margin: 30px 0; }
 
 h3 {
   font-size: 20px;
-  font-weight: 700; }
+  font-family: "lato", sans-serif; }
 
 section {
   margin-top: 100px; }
@@ -102,6 +93,12 @@ ul {
   padding-left: 0px;
   -webkit-padding-start: 0px; }
 
+.venue-name {
+  font-weight: 600; }
+
+.rating {
+  color: #ED1C24; }
+
 footer .container {
   display: flex;
   align-items: center;
@@ -114,7 +111,7 @@ footer .container {
   overflow: hidden; }
   .footerstyles span {
     color: #C1C0B9;
-    font-family: "Avenir Book", sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 16px;
     margin: 5px;
     letter-spacing: 1.5px; }
@@ -126,7 +123,7 @@ footer nav li {
   font-size: 16px; }
   footer nav li a {
     color: #ED1C24;
-    font-family: "Avenir Book", sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 16px;
     margin: 5px;
     letter-spacing: 1.5px;
