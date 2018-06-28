@@ -19,16 +19,22 @@
 
   <link rel="shortcut icon" href="img/pin.png">
 
-
-
   <!-- Javascript -->
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjKQgwOyEoPASA5v9UQ4i64Zpboq8-46Y"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjKQgwOyEoPASA5v9UQ4i64Zpboq8-46Y"></script>
 
-    <script type="text/javascript" src="path/to/instafeed.min.js"></script>
+    <script type="text/javascript" src="js/min/main-min.js"></script>
+
+
+
+  <script type="text/javascript" src="path/to/instafeed.min.js"></script>
   <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
 
-  <body>
+  <body data-spy="scroll" data-target="#navbar-spy">
     <div class="container-fluid">
     <header>
       <div class="container">
@@ -54,8 +60,7 @@
 
     <section>
       <h2>The Map</h2>
-
-      map here 
+          <div id="mapCanvas" class="mapcanvas"></div>
     </section>
 
 
@@ -132,5 +137,19 @@
 
 
   </div>
+
+      <!-- MAPS! -->
+
+    <script type="text/javascript"
+      src="js/map-center.js">
+    </script>
+
+    <script type="text/javascript"
+      src="js/map-pins.js">
+    </script>
+
+    <script type="text/javascript"
+      src="js/map-styles.js">
+    </script>
 
   </body>

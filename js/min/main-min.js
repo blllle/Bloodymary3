@@ -1,0 +1,1 @@
+$(document).ready(function(){console.log(ready),$("#mobileMenu").click(function(){$(".mobile_nav").toggle()}),$("a[data-smooth-scroll]").on("click",function(o){o.preventDefault();var n=this.hash,t=$(n);$("html, body").stop().animate({scrollTop:t.offset().top},900,"swing",function(){window.location.hash=n})})});

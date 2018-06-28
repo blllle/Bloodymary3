@@ -1,0 +1,1 @@
+mapOptions={center:new google.maps.LatLng(-37.813,144.985),zoom:13,mapTypeId:google.maps.MapTypeId.ROADMAP,scrollwheel:!1},window.map=new google.maps.Map(document.getElementById("mapCanvas"),mapOptions);
