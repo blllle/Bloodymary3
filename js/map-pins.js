@@ -5,12 +5,12 @@
       var marker1 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png',
+      icon: 'images/pinred.png',
       title: 'Pillar of Salt'
     });
 
     var infoWindow1 = new google.maps.InfoWindow({
-      content: '<h5><a href="pillar.html">Pillar of Salt</a></h5><br/><p>Address:</p><p>541 Church Street,</p><p>Richmond VIC</p><p>4/5</p>'
+      content: '<h5>Pillar of Salt</h5><br/><p>Address:</p><p>541 Church Street,</p><p>Richmond VIC</p><p>4/5</p>'
     });
 
     google.maps.event.addListener(marker1, 'click', function (event) {
@@ -24,13 +24,39 @@
     });
 
 
+    // test
+
+      LongLat = new google.maps.LatLng(-39.829690400000000000, 144.997327600000060000);
+      var marker25 = new google.maps.Marker({
+      position: LongLat,
+      map: window.map,
+      icon: 'images/pinred.png',
+      title: 'Pillar of Salt'
+    });
+
+    var infoWindow1 = new google.maps.InfoWindow({
+      content: '<h5>test</h5><br/><p>Address:</p><p>541 Church Street,</p><p>Richmond VIC</p><p>4/5</p>'
+    });
+
+    google.maps.event.addListener(marker25, 'click', function (event) {
+      if (window.previousInfoWindow) {
+      window.previousInfoWindow.close();
+    };
+    infoWindow25.open(window.map, marker25);
+    window.previousInfoWindow = infoWindow25;
+
+
+    });
+
+
+
     // Barry
 
     LongLat = new google.maps.LatLng(-37.780202400000000000, 144.996597599999970000);
     var marker3 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png', 
+      icon: 'images/pinred.png', 
       title: 'Barry'
     });
 
@@ -54,7 +80,7 @@
     var marker4 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png',    
+      icon: 'images/pinred.png',    
       title: 'Borsch Vodka Tears'
     }); 
 
@@ -77,7 +103,7 @@
     var marker5 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png', 
+      icon: 'images/pinred.png', 
       title: 'Dr. Morse'
     });
 
@@ -102,7 +128,7 @@
      LongLat = new google.maps.LatLng(-37.825183000000000000, 144.995009999999980000);
     var marker6 = new google.maps.Marker({
       position: LongLat,
-      icon: 'img/pinred.png', 
+      icon: 'images/pinred.png', 
       map: window.map,
       title: 'Feast of Merit'
     });  
@@ -127,7 +153,7 @@
     var marker7 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png', 
+      icon: 'images/pinred.png', 
       title: 'Friend of Mine'
 
     }); 
@@ -153,7 +179,7 @@
     var marker8 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png', 
+      icon: 'images/pinred.png', 
       title: 'Mr Scruffs'
 
     }); 
@@ -176,7 +202,7 @@
     var marker9 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png', 
+      icon: 'images/pinred.png', 
       title: 'Naked For Satan'
 
     }); 
@@ -200,7 +226,7 @@
     var marker10 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png', 
+      icon: 'images/pinred.png', 
       title: 'Yellow Bird'
     }); 
 
@@ -224,7 +250,7 @@
     var marker11 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png', 
+      icon: 'images/pinred.png', 
       title: 'Carlton Club'
     }); 
 
@@ -247,7 +273,7 @@
     var marker12 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png', 
+      icon: 'images/pinred.png', 
       title: 'Sunmoth Canteen'
     }); 
 
@@ -270,7 +296,7 @@
     var marker13 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png',     
+      icon: 'images/pinred.png',     
       title: 'Mamasita'
     }); 
 
@@ -293,7 +319,7 @@
     var marker14 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png', 
+      icon: 'images/pinred.png', 
       title: 'Botherambo'
     }); 
 
@@ -316,7 +342,7 @@
     var marker15 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png', 
+      icon: 'images/pinred.png', 
       title: 'Top Paddock'
     }); 
 
@@ -339,7 +365,7 @@
     var marker16 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png', 
+      icon: 'images/pinred.png', 
       title: 'Sweetwater Inn'
     }); 
 
@@ -362,7 +388,7 @@
     var marker17 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png', 
+      icon: 'images/pinred.png', 
       title: 'Drugstore Espresso'
     }); 
 
@@ -386,7 +412,7 @@
     var marker18 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png', 
+      icon: 'images/pinred.png', 
       title: 'Green Park Dinging'
     }); 
 
@@ -410,7 +436,7 @@
     var marker19 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png', 
+      icon: 'images/pinred.png', 
       title: 'stagger lees'
     }); 
 
@@ -434,7 +460,7 @@
     var marker20 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png', 
+      icon: 'images/pinred.png', 
       title: 'Magic Mountain'
     }); 
 
@@ -458,7 +484,7 @@
     var marker21 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png', 
+      icon: 'images/pinred.png', 
       title: 'Slowpoke Espresso'
     }); 
 
@@ -481,7 +507,7 @@
     var marker22 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png', 
+      icon: 'images/pinred.png', 
       title: 'Georges Bar'
     }); 
 
@@ -504,7 +530,7 @@
     var marker23 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png', 
+      icon: 'images/pinred.png', 
       title: 'Young Bloods Diner'
     }); 
 
@@ -527,7 +553,7 @@
     var marker24 = new google.maps.Marker({
       position: LongLat,
       map: window.map,
-      icon: 'img/pinred.png', 
+      icon: 'images/pinred.png', 
       title: 'Auction Rooms'
     }); 
 

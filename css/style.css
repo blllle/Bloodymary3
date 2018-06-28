@@ -89,16 +89,6 @@ section {
   height: 70vh;
   width: 100%; }
 
-.toggle-back img {
-  width: 14px; }
-.toggle-back p {
-  padding-top: 10px;
-  color: #02142B;
-  font-size: 16px;
-  text-transform: uppercase; }
-  .toggle-back p:hover {
-    color: #ED1C24; }
-
 .list-all {
   display: flex;
   justify-content: space-between; }
