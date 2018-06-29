@@ -9,16 +9,14 @@ $footer-color:              #1F252B;
 
 // variables - fonts
 
-$headings-font:             'lato', sans-serif;
-$body-font:                 'lato', sans-serif;
+$headings-font:             'Oswald', sans-serif;
+$body-font:                 'Source Serif Pro', serif;
 
 
 $body-size:                 16px;
-$h1-size:                   32px;
-$h2-size:                   24px;
-$h3-size:                   20px;
 
-
+$h2-size:                   32px;
+$h3-size:                   24px;
 
 
 
@@ -46,6 +44,8 @@ body {
   padding: 0px 40px;
 }
 
+
+// header
 
 header {
   height: 100px;
@@ -76,7 +76,7 @@ header nav li {
 
   a {
   color: $darkgrey-color;
-  font-family: $headings-font;
+  font-family: $body-font;
   font-size: $body-size;
   margin: 5px;
   letter-spacing: 1.5px;
@@ -89,11 +89,21 @@ header nav li {
   }
 }
 
-
-
 header img {
   width: 120px
 }
+
+.background-main {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background: rgb(154,7,7);
+  background: linear-gradient(153deg, rgba(154,7,7,1) 2%, rgba(255,0,0,1) 37%, rgba(255,113,0,1) 100%);
+}
+
+
+// shared styles
 
 
 h2 {
@@ -114,14 +124,26 @@ section {
   margin-top: 100px;
 }
 
+a {
+  font-family: $body-font;
+  font-size: $body-size;
+  margin: 5px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+}
+
+
+// Recent bloodys
+
+
 .recent {
   margin-top: 150px;
-  p {
     text-align: center;
-  }
   a {
-    color: $red-color;
-    text-decoration: none; 
+    color: white;
+    display: block;
+    margin-bottom: 20px;
   }
   h2 {
    margin-bottom: 10px   
@@ -134,43 +156,61 @@ section {
 }
 
 
+// list // 
+
+
+
+.list-image {
+  height: 450px;
+  width: 100%;
+  background-image: url('../images/1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: red;
+  background-size: cover;   
+}
+
+.list-image h2 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    color:white
+}
+
 .list-all {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-li {
-  margin: 10px 0;
-}
 
-ul {
+.list ul {
   margin: 0px 10px;
   list-style: none;
   padding-left: 0px;
   -webkit-padding-start: 0px;
-
 }
 
 .venues a {
-  font-weight: 600;
-  text-decoration: none;
   color: $darkgrey-color;
+  margin-left: 8px;
+  li {
+    margin: 15px 0 40px; 
+  }
 }
 
 .rating {
-  color: $darkgrey-color;
+  display: block;
 }
 
 .location {
   font-size: 12px;
-  display: block;
 }
 
 
 
-
-
+// About page //
 
 
 .about-image {
@@ -184,27 +224,42 @@ ul {
   background-size: cover;
 }
 
+.about-image h2 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    color:white
+}
+
+
 .about-text {
   max-width: 900px;
   margin: 40px auto 0;
+  a {
+    color:$red-color;
+  }
 }
+
+
+// Footer styles //
 
 
 footer .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-    margin: 20px auto;
+  margin: 20px auto;
+  padding: 20px 40px;
 }
 
 .footerstyles {
-  padding: 0px 20px;
   background-color: $footer-color;
-    overflow: hidden;
+  overflow: hidden;
 
-  span {
+  p {
     color: #C1C0B9;
-    font-family: $body-font;
+    font-family: $headings-font;
     font-size: $body-size;
     margin: 5px;
     letter-spacing: 1.5px;
@@ -212,9 +267,8 @@ footer .container {
 }
 
 
-
 footer nav li {
-  margin-left: 10px;
+  margin: 0 0 0 10px;
   display: inline-block;
   list-style: none;
   font-size: 16px;

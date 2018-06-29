@@ -1,5 +1,5 @@
 body {
-  font-family: "lato", sans-serif;
+  font-family: "Source Serif Pro", serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #F5F5F5;
@@ -39,7 +39,7 @@ header nav li {
   list-style: none; }
   header nav li a {
     color: #02142B;
-    font-family: "lato", sans-serif;
+    font-family: "Source Serif Pro", serif;
     font-size: 16px;
     margin: 5px;
     letter-spacing: 1.5px;
@@ -51,28 +51,44 @@ header nav li {
 header img {
   width: 120px; }
 
+.background-main {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  background: #9a0707;
+  background: linear-gradient(153deg, #9a0707 2%, red 37%, #ff7100 100%); }
+
 h2 {
   text-align: center;
-  font-size: 24px;
-  font-family: "lato", sans-serif;
+  font-size: 32px;
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   margin: 30px 0; }
 
 h3 {
-  font-size: 20px;
-  font-family: "lato", sans-serif;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
   margin-left: 10px; }
 
 section {
   margin-top: 100px; }
 
+a {
+  font-family: "Source Serif Pro", serif;
+  font-size: 16px;
+  margin: 5px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-decoration: none; }
+
 .recent {
-  margin-top: 150px; }
-  .recent p {
-    text-align: center; }
+  margin-top: 150px;
+  text-align: center; }
   .recent a {
-    color: #ED1C24;
-    text-decoration: none; }
+    color: white;
+    display: block;
+    margin-bottom: 20px; }
   .recent h2 {
     margin-bottom: 10px; }
 
@@ -80,31 +96,44 @@ section {
   height: 70vh;
   width: 100%; }
 
+.list-image {
+  height: 450px;
+  width: 100%;
+  background-image: url("../images/1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: red;
+  background-size: cover; }
+
+.list-image h2 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  color: white; }
+
 .list-all {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; }
 
-li {
-  margin: 10px 0; }
-
-ul {
+.list ul {
   margin: 0px 10px;
   list-style: none;
   padding-left: 0px;
   -webkit-padding-start: 0px; }
 
 .venues a {
-  font-weight: 600;
-  text-decoration: none;
-  color: #02142B; }
+  color: #02142B;
+  margin-left: 8px; }
+  .venues a li {
+    margin: 15px 0 40px; }
 
 .rating {
-  color: #02142B; }
+  display: block; }
 
 .location {
-  font-size: 12px;
-  display: block; }
+  font-size: 12px; }
 
 .about-image {
   height: 450px;
@@ -115,35 +144,44 @@ ul {
   background-color: red;
   background-size: cover; }
 
+.about-image h2 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  color: white; }
+
 .about-text {
   max-width: 900px;
   margin: 40px auto 0; }
+  .about-text a {
+    color: #ED1C24; }
 
 footer .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px auto; }
+  margin: 20px auto;
+  padding: 20px 40px; }
 
 .footerstyles {
-  padding: 0px 20px;
   background-color: #1F252B;
   overflow: hidden; }
-  .footerstyles span {
+  .footerstyles p {
     color: #C1C0B9;
-    font-family: "lato", sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 16px;
     margin: 5px;
     letter-spacing: 1.5px; }
 
 footer nav li {
-  margin-left: 10px;
+  margin: 0 0 0 10px;
   display: inline-block;
   list-style: none;
   font-size: 16px; }
   footer nav li a {
     color: #ED1C24;
-    font-family: "lato", sans-serif;
+    font-family: "Source Serif Pro", serif;
     font-size: 16px;
     margin: 5px;
     letter-spacing: 1.5px;
