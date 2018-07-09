@@ -81,7 +81,6 @@ section {
 a {
   font-family: "Source Serif Pro", serif;
   font-size: 16px;
-  margin: 5px;
   font-weight: 600;
   letter-spacing: 1.5px;
   text-decoration: none; }
@@ -222,3 +221,28 @@ footer nav li {
   .about-text {
     max-width: 900px;
     margin: 40px; } }
+@media (max-width: 367px) {
+  header ul {
+    -webkit-padding-start: 0px; }
+
+  footer .container {
+    padding: 20px 20px; } }
+@media (max-width: 327px) {
+  header .container {
+    padding: 10px; }
+
+  header {
+    height: 76px; } }
+@media (max-width: 310px) {
+  .border {
+    display: none; }
+
+  header nav {
+    font-size: 14px; }
+
+  header img {
+    width: 80px; }
+
+  header .container {
+    align-items: flex-end;
+    padding: 12px; } }
