@@ -39,12 +39,15 @@ body {
 
 // header
 header {
-  height: 80px;
+  height: 65px;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 2;
+  background-color: transparent;
+  box-shadow: initial;
+  transition: all 0.6s ease-in-out;
 }
 
 header .container {
@@ -52,15 +55,23 @@ header .container {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 15px 20px 8px;
+  padding: 15px 20px;
+}
+
+header nav ul {
+  margin: 0;
 }
 
 header nav li {
   margin-left: 10px;
   display: inline-block;
   list-style: none;
+}
+
+.header-nav,
+.homepage-nav {
   a {
-    color: $red-color;
+    color: white;
     font-family: $body-font;
     font-size: $body-size;
     margin: 5px;
@@ -73,14 +84,19 @@ header nav li {
   }
 }
 
+.homepage-nav {
+  display: none;
+}
+
 header img {
-  width: 100px
+  width: 80px
 }
 
 // add this class to the header when scrolled 
 .scrolled {
   background-color: white;
   box-shadow: 0 0 2px rgba(6, 8, 8, 0.15);
+  transition: all 0.3s ease-in-out;
 }
 
 // shared styles
