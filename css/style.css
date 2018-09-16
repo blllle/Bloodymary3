@@ -3,7 +3,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background-color: seashell;
-  color: #403f3f;
+  color: #444;
   margin: 0px;
 }
 
@@ -49,7 +49,7 @@ header nav li {
 }
 
 header nav li a {
-  color: #02142B;
+  color: #FB0D29;
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
   margin: 5px;
@@ -67,11 +67,10 @@ header img {
   width: 100px;
 }
 
-.background-main {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: bottom;
+.scrolled {
+  background-color: white;
+  -webkit-box-shadow: 0 0 2px rgba(6, 8, 8, 0.15);
+          box-shadow: 0 0 2px rgba(6, 8, 8, 0.15);
 }
 
 h2 {
@@ -82,7 +81,7 @@ h2 {
 }
 
 h3 {
-  color: #403f3f;
+  color: #444;
   text-align: center;
   font-size: 26px;
   font-family: "Lato", sans-serif;
@@ -99,19 +98,24 @@ a {
   transition: color 0.2s ease;
 }
 
-.recent {
-  margin-top: 200px;
-  text-align: center;
+::-moz-selection {
+  background: #FB0D29;
+  color: white;
 }
 
-.recent a {
-  color: #403f3f;
-  display: block;
-  margin-bottom: 20px;
+::selection {
+  background: #FB0D29;
+  color: white;
 }
 
-.recent a:hover {
-  color: #FB0D29;
+a::-moz-selection {
+  background: #FB0D29;
+  color: #444;
+}
+
+a::selection {
+  background: #FB0D29;
+  color: #444;
 }
 
 .welcome {
@@ -120,7 +124,7 @@ a {
 }
 
 .welcome .h2 {
-  color: #403f3f;
+  color: #444;
   font-size: 42px;
   font-family: "Lato", sans-serif;
 }
@@ -131,15 +135,30 @@ a {
   font-family: "Lato", sans-serif;
 }
 
-.welcome .about {
-  color: #403f3f;
+.welcome .aside {
+  color: #444;
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
 
-.welcome .about:hover {
+.welcome .aside:hover {
+  color: #FB0D29;
+}
+
+.recent {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.recent a {
+  color: #444;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.recent a:hover {
   color: #FB0D29;
 }
 
@@ -154,7 +173,7 @@ a {
 }
 
 .places a {
-  color: #403f3f;
+  color: #444;
   display: block;
   margin-bottom: 20px;
 }
@@ -175,6 +194,7 @@ a {
   background-position: center;
   background-color: red;
   background-size: cover;
+  margin-bottom: 60px;
 }
 
 .list-all {
@@ -186,7 +206,7 @@ a {
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin: 50px 0px;
 }
 
 .filters-list {
@@ -196,7 +216,7 @@ a {
 
 .filters-list a {
   margin: 0 5px;
-  color: #403f3f;
+  color: #444;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
@@ -238,20 +258,13 @@ a {
   background-position: center;
   background-color: red;
   background-size: cover;
-}
-
-.about-image h2 {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  color: white;
+  margin-bottom: 60px;
 }
 
 .about-text {
-  max-width: 900px;
+  max-width: 800px;
   margin: 40px auto 0;
+  font-size: 18px;
 }
 
 .about-text a {
@@ -347,7 +360,7 @@ footer nav li a:hover {
     padding: 20px;
   }
   h3 {
-    margin-bottom: 10px;
+    margin: 20px;
   }
   .recent,
   .places {
@@ -357,10 +370,12 @@ footer nav li a:hover {
   .places a {
     color: #FB0D29;
   }
+  .welcome-image img {
+    width: 30px;
+  }
   .welcome {
     display: block;
     margin-top: 60px;
-    margin-top: 100px;
   }
   .welcome .h2 {
     font-size: 24px;

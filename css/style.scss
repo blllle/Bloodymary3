@@ -1,43 +1,34 @@
-
 // variables - colors
-
-$red-color:                 #FB0D29;
-$darkgrey-color:            #02142B;
-$lightgrey-color:           #808080;
-$backgroundgrey-color:      #F5F5F5;
-$footer-color:              #1F252B; 
-$black:                      #403f3f;
-
+$red-color: #FB0D29;
+$darkgrey-color: #02142B;
+$lightgrey-color: #808080;
+$backgroundgrey-color: #F5F5F5;
+$footer-color: #1F252B;
+$black: #444;
 // variables - fonts
-
-$headings-font:             'Lato', sans-serif;
-$body-font:                 'Roboto Mono', monospace;
-
-
-
-$body-size:                 16px;
-
-$h2-size:                   42px;
-$h3-size:                   26px;
-$h4-size:                   24px;
-
-
+$headings-font: 'Lato',
+sans-serif;
+$body-font: 'Roboto Mono',
+monospace;
+$body-size: 16px;
+$h2-size: 42px;
+$h3-size: 26px;
+$h4-size: 24px;
 body {
   font-family: $body-font;
   font-size: 16px;
   line-height: 1.5;
-  
   background-color: seashell;
   color: $black;
-  margin:0px;
+  margin: 0px;
 }
 
 // outer wrapper
 .container-fluid {
-    overflow: hidden;
-    width: 100%;
-    padding-left: 0px;
-    padding-right: 0px;
+  overflow: hidden;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 // inner wrapper
@@ -46,20 +37,15 @@ body {
   padding: 0px 40px;
 }
 
-
 // header
-
 header {
   height: 80px;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  // background-color: white;
-  // box-shadow: 0 0 2px rgba(6, 8, 8, 0.15);
   z-index: 2;
 }
-
 
 header .container {
   display: flex;
@@ -69,22 +55,17 @@ header .container {
   padding: 15px 20px 8px;
 }
 
-
-
-
 header nav li {
   margin-left: 10px;
   display: inline-block;
   list-style: none;
-
   a {
-  color: $darkgrey-color;
-  font-family: $body-font;
-  font-size: $body-size;
-  margin: 5px;
-  letter-spacing: 1.5px;
-  text-decoration: none;
-
+    color: $red-color;
+    font-family: $body-font;
+    font-size: $body-size;
+    margin: 5px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
     &:hover {
       color: $red-color;
       transition: color 0.2s ease;
@@ -96,23 +77,18 @@ header img {
   width: 100px
 }
 
-.background-main {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: bottom;
+// add this class to the header when scrolled 
+.scrolled {
+  background-color: white;
+  box-shadow: 0 0 2px rgba(6, 8, 8, 0.15);
 }
 
-
 // shared styles
-
-
 h2 {
   color: $red-color;
   text-align: center;
   font-size: $h2-size;
   font-family: $headings-font;
-
 }
 
 h3 {
@@ -124,7 +100,6 @@ h3 {
   margin: 30px 0;
 }
 
-
 a {
   font-family: $body-font;
   font-size: $body-size;
@@ -133,77 +108,75 @@ a {
   transition: color 0.2s ease;
 }
 
-
-// Recent bloodys
-
-
-.recent {
-  margin-top: 200px;
-    text-align: center;
-  a {
-    color: $black;
-    display: block;
-    margin-bottom: 20px;
-
-    &:hover {
-    color: $red-color;
-    }
-  }
+::selection {
+  background: $red-color;
+  color: white;
 }
 
-.welcome {
-    max-width: 800px;
-    margin: 100px auto 0;
-  .h2 {
+a::selection {
+  background: $red-color;
   color: $black;
-  font-size: $h2-size;
-  font-family: $headings-font;
+}
+
+// welcome text
+.welcome {
+  max-width: 800px;
+  margin: 100px auto 0;
+  .h2 {
+    color: $black;
+    font-size: $h2-size;
+    font-family: $headings-font;
   }
   a {
-  color: $red-color;
-  font-size: $h2-size;
-  font-family: $headings-font; 
+    color: $red-color;
+    font-size: $h2-size;
+    font-family: $headings-font;
   }
 }
 
-.welcome .about {
+.welcome .aside {
   color: $black;
   font-family: $body-font;
   font-size: $body-size;
   transition: color 0.2s ease;
-
   &:hover {
-  color: $red-color;
+    color: $red-color;
   }
-
 }
 
-
-.mapcanvas{
-  height:70vh; 
-  width:100%;
-}
-
-.places {
-  margin-top:200px;
+// instagram & maps 
+.recent {
+  margin-top: 200px;
   text-align: center;
   a {
     color: $black;
     display: block;
     margin-bottom: 20px;
-
     &:hover {
-    color: $red-color;
+      color: $red-color;
     }
   }
 }
 
+.mapcanvas {
+  height: 70vh;
+  width: 100%;
+}
 
+.places {
+  margin-top: 200px;
+  text-align: center;
+  a {
+    color: $black;
+    display: block;
+    margin-bottom: 20px;
+    &:hover {
+      color: $red-color;
+    }
+  }
+}
 
 // list // 
-
-
-
 .list {
   margin-top: 50px;
 }
@@ -215,14 +188,15 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-color: red;
-  background-size: cover;   
+  background-size: cover;
+  margin-bottom: 60px;
 }
 
 .list-all {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin: 50px 0px;
 }
 
 .filters-list {
@@ -233,14 +207,14 @@ a {
 .filters-list a {
   margin: 0 5px;
   color: $black;
-  transition: color 0.2s ease;  
+  transition: color 0.2s ease;
   &:hover {
     color: $red-color;
   }
 }
 
 .filter-selected {
-  color:red;
+  color: red;
 }
 
 .bloody {
@@ -264,45 +238,28 @@ a {
   margin: 5px 8px 0px 8px;
 }
 
-
-
-
-
 // About page //
-
-
 .about-image {
   height: 450px;
   width: 100%;
   background-image: url('../images/2.jpeg');
   background-repeat: no-repeat;
-
   background-position: center;
   background-color: red;
   background-size: cover;
+  margin-bottom: 60px;
 }
-
-.about-image h2 {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%);
-    color:white
-}
-
 
 .about-text {
-  max-width: 900px;
+  max-width: 800px;
   margin: 40px auto 0;
+  font-size: 18px;
   a {
-    color:$red-color;
+    color: $red-color;
   }
 }
 
-
 // Footer styles //
-
-
 footer .container {
   display: flex;
   align-items: center;
@@ -313,7 +270,6 @@ footer .container {
 .footerstyles {
   background-color: $footer-color;
   overflow: hidden;
-
   p {
     color: #C1C0B9;
     font-family: $headings-font;
@@ -323,21 +279,18 @@ footer .container {
   }
 }
 
-
 footer nav li {
   margin: 0 0 0 10px;
   display: inline-block;
   list-style: none;
   font-size: 16px;
-
   a {
-  color: $red-color;
-  font-family: $body-font;
-  font-size: $body-size;
-  margin: 5px;
-  letter-spacing: 1.5px;
-  text-decoration: none;
-
+    color: $red-color;
+    font-family: $body-font;
+    font-size: $body-size;
+    margin: 5px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
     &:hover {
       color: white;
       transition: color 0.2s ease;
@@ -346,40 +299,36 @@ footer nav li {
 }
 
 .visible-small {
-  display:none;
+  display: none;
 }
 
 @media (max-width: 990px) {
   .bloody {
-  width: 25%;
+    width: 25%;
   }
 }
 
 @media (max-width: 770px) {
   .bloody {
-  width: 40%;
+    width: 40%;
   }
   .list-all {
-  justify-content: center;
-
+    justify-content: center;
   }
 }
 
 @media (max-width: 400px) {
-
   .hidden-small {
-    display:none;
+    display: none;
   }
   .visible-small {
-    display:block;
+    display: block;
   }
-
   .container {
     padding: 20px;
   }
-
   header .container {
-    padding: 20px; 
+    padding: 20px;
     ul {
       display: inline;
     }
@@ -387,9 +336,8 @@ footer nav li {
   footer .container {
     padding: 20px;
   }
-
   h3 {
-    margin-bottom: 10px;
+    margin: 20px;
   }
   .recent,
   .places {
@@ -399,68 +347,52 @@ footer nav li {
   .places a {
     color: $red-color;
   }
-
+  .welcome-image img {
+    width: 30px;
+  }
   .welcome {
     display: block;
     margin-top: 60px;
-    margin-top: 100px;
     .h2 {
-    font-size: $h4-size;
+      font-size: $h4-size;
     }
     a {
-    font-size: $h4-size;
+      font-size: $h4-size;
     }
   }
   .bloody {
     width: 90%;
   }
-
-
   .about-text {
     max-width: 900px;
     margin: 40px;
   }
-
 }
 
-
 @media (max-width: 367px) {
-
   header ul {
     -webkit-padding-start: 0px;
   }
 }
 
 @media (max-width: 327px) {
-
   header .container {
     padding: 10px;
   }
   header {
     height: 76px;
   }
-
-
 }
 
-
 @media (max-width: 310px) {
-
-
   header nav {
     font-size: 14px;
   }
   header img {
     width: 80px;
   }
-
   header .container {
-  align-items: flex-end;
-  padding: 12px;
+    align-items: flex-end;
+    padding: 12px;
   }
-
 }
-
-
-
-
