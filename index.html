@@ -21,92 +21,88 @@
 
   <link rel="shortcut icon" href="images/bloodymary.png">
 
-<link href="https://fonts.googleapis.com/css?family=Lato:900|Roboto+Mono" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:900|Roboto+Mono" rel="stylesheet">
 
 
   <!-- Javascript -->
 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjKQgwOyEoPASA5v9UQ4i64Zpboq8-46Y"></script>
+  <script type="application/javascript" src="js/jquery.js"></script>
 
+  <script type="application/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjKQgwOyEoPASA5v9UQ4i64Zpboq8-46Y"></script>
 
+  <script type="application/javascript" src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
 
-  <script type="text/javascript" src="path/to/instafeed.min.js"></script>
-
-  <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-
+  <script type="application/javascript" src="js/main.js"></script>
 
   <body>
-    <div class="container-fluid background-main">
-    <header>
+    <div class="container-fluid">
+      <header>
+        <div class="container">
+          <a href="index.html"><img class="logostyle" src="images/bmm2017.svg" /></a>
+        </div>
+      </header>
+
       <div class="container">
-        <a href="index.html"><img class="logostyle" src="images/bmm2017.svg"/></a>
+
+        <section class="welcome">
+          <div class="welcome-image" title="All of the Bloody Mary's">
+            <img src="images/bloodymary.png" alt="bloodymary glass">
+            <img src="images/bloodymary.png" alt="bloodymary glass">
+            <img src="images/bloodymary.png" alt="bloodymary glass">
+            <img src="images/bloodymary.png" alt="bloodymary glass">
+            <img src="images/bloodymary.png" alt="bloodymary glass">
+          </div>
+          <div class="h2">
+            <p>Welcome to Bloody Mary [Melbourne]* Glad you could join me in <a target="_blank" href="https://www.instagram.com/bloodymary_melbourne/"
+                title="hashtag instafamous">the pursuit of happiness in a glass.</a> Looking for a Bloody Mary <a href="#map"
+                title="probably view the map">right now?</a> or planning ahead for Sunday brunch.. <a href="list.html" title="I love brunch, browse the directory">I
+                got you fam.</a> Have a place you think I should check out <a href="mailto:bloodymarymelbourne-at-gmail.com"
+                title="no hate mail plz">Hola at me here</a></p>
+            <p><a href="about.html" class="aside"> *I'm thinking globally. World domination s*it.</p></a>
+          </div>
+        </section>
+        <section class="recent">
+          <h3>Recent Marys</h3>
+          <a target="_blank" href="https://www.instagram.com/bloodymary_melbourne/"> @bloodymary_melbourne</a>
+          <iframe src="https://cdn.lightwidget.com/widgets/28f0dcde68655013b91056e19f38a344.html" scrolling="no" allowtransparency="true"
+            class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+        </section>
+
+        <section id="map" class="places">
+          <h3>The Map</h3>
+          <a href="list.html">(View the full list)</a>
+          <div id="mapCanvas" class="mapcanvas"></div>
+        </section>
+
       </div>
-    </header>
-
-    <div class="container">
-
-      <section class="welcome">
-        
-        <p class="h2">Welcome to Bloody Mary [Melbourne]* Glad you could join me in <a target="_blank" href="https://www.instagram.com/bloodymary_melbourne/" title="hashtag instafamous">the pursuit of happiness in a glass.</a> Looking for a Bloody Mary <a href="#map" title="probably view the map">right now?</a> or planning ahead for Sunday brunch.. <a href="list.html" title="I love brunch, browse the directory">I got you fam.</a>
-        Have a place you think I should check out <a href="mailto:bloodymarymelbourne-at-gmail.com" title="no hate mail plz">Hola at me here</a><span><img src="images/bloodymary.png"></span></p>
-        <p><a href="about.html" class="about">*I'm thinking globally.</a> World domination s*it.</p>
-      </section>
-
-
-    <section class="recent">
-
-
-
-
-      <h3>Recent Marys</h3>
-      
-      <a target="_blank" href="https://www.instagram.com/bloodymary_melbourne/"> @bloodymary_melbourne</a>
-
-      <iframe src="https://cdn.lightwidget.com/widgets/28f0dcde68655013b91056e19f38a344.html" scrulling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-
-    </section>
-
-    <section id="map" class="places">
-      <h3>The Map</h3>
-            <a href="list.html">(View the full list)</a>
-      <div id="mapCanvas" class="mapcanvas"></div>
-
-    </section>
-
-  </div>
-    <footer class="footerstyles">
-      <div class="container">
+      <footer class="footerstyles">
+        <div class="container">
           <p>Bloody Mary Melbourne 2018</p>
-        <nav>
-          <ul>
-            <li><a href="http://www.instagram.com/bloodymary_melbourne">+ Instagram</a></li>                
-            <li><a href="about.html">+ About</a></li>
-            <li><a href="mailto:bloodymarymelbourne@gmail.com">+ Contact</a></li>
-          </ul>
-        </nav>
-      </div> 
-    </footer>  
+          <nav>
+            <ul>
+              <li><a href="http://www.instagram.com/bloodymary_melbourne">+ Instagram</a></li>
+              <li><a href="about.html">+ About</a></li>
+              <li><a href="mailto:bloodymarymelbourne@gmail.com">+ Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
 
 
-  </div>
+    </div>
 
-      <!-- MAPS! -->
+    <!-- MAPS! -->
 
-    <script type="text/javascript"
-      src="js/map-center.js">
+    <script type="text/javascript" src="js/map-center.js">
     </script>
 
-    <script type="text/javascript"
-      src="js/map-pins.js">
+    <script type="text/javascript" src="js/map-pins.js">
     </script>
 
-    <script type="text/javascript"
-      src="js/map-styles.js">
+    <script type="text/javascript" src="js/map-styles.js">
     </script>
 
   </body>
